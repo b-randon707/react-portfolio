@@ -1,11 +1,21 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import Profilepic from '../assets/brandongarza.png'
 
 const Home = () => {
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
         {/*container */}
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+        <div className= 'max-w-[1000px] mx-auto px-8 flex items-center justify-center h-full' >
+          {/*'max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'*/}
+          {/* Add profile picture */}
+          <img
+            src={Profilepic}
+            alt="Brandon Garza"
+            className=" rounded-xl mr-4"
+          />
+
+          <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
             <p className='text-gray-400'>Hi, my name is</p>
             <h1 className='text-4xl sm:text-7xl font-bold text-blue-300'>Brandon Garza</h1>
             <h2 className='text-4xl sm:text-7xl font-bold text-gray-700'>I'm a Full-Stack Developer </h2>
@@ -20,6 +30,7 @@ const Home = () => {
                     </span>
                     </button>  
                 </div>
+          </div> 
         </div>
 
     </div>
